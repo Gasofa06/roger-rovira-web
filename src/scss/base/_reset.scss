@@ -1,0 +1,57 @@
+@use '../abstracts/color' as *;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+body.light {
+  background-color: $c-gray-000;
+
+
+  .text {
+    color: $c-blue-000;
+  }
+  .background {
+    background-color: $c-white-100;
+  }
+
+
+  .switch {
+    .slider {
+      background-color: $c-gray-300;
+    }
+    .slider.checked {
+      background-color: $c-blue-400;
+    }
+    .slider:before {
+      background-color: $c-gray-000;
+    }
+  }
+}
+
+body.dark {
+  background-color: $c-black-700;
+
+
+  .text {
+    color: $c-blue-000;
+  }
+  .background {
+    background-color: $c-blue-000;
+  }
+
+
+  .switch {
+    .slider {
+      background-color: $c-black-400;
+    }
+    .slider:before {
+      background-color: $c-gray-100;
+    }
+    .slider.checked {
+      background-color: $c-purple-500;
+    }
+  }
+}
